@@ -159,6 +159,7 @@ function createRoot(
       );
     }
   }
+  
   return createRootImpl(container, options);
 }
 
