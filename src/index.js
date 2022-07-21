@@ -24,4 +24,4 @@ render.render(<Base />);
 
 console.log('end')
 // document.getElementById('root').innerHTML = '32423'
-debugger
+// debugger
