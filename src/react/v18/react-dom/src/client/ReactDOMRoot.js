@@ -131,6 +131,7 @@ ReactDOMHydrationRoot.prototype.render = ReactDOMRoot.prototype.render = functio
       }
     }
   }
+  
   updateContainer(children, root, null, null);
 };
 

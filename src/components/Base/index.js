@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 export default function Base(){
-
-  return <div>
+  let [num, setNum] = useState(0)
+  
+  const dom = <div>
+    <div onClick={()=>{
+      setNum(++num)
+      console.log(num)
+    }}>加</div>
+    <div onClick={()=>setNum(--num)}>减</div>
     <div>
-      fasdfa
+      {num}
     </div>
   </div>
+  return dom
 }

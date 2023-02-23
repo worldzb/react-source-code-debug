@@ -5,11 +5,10 @@ import App from './App';
 
 import Base from './components/Base'
 
+
 const root = document.getElementById('root')
 
 const render = ReactDOM.createRoot(root)
-console.log(render)
-// console.log(<Base />)
 
 // Concurrent mode
 render.render(<Base />);
@@ -22,6 +21,6 @@ render.render(<Base />);
 
 // console.log('React 源码调试，当前版本：' + React.version);
 
-console.log('end')
+
 // document.getElementById('root').innerHTML = '32423'
 // debugger
