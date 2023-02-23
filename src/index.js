@@ -7,8 +7,9 @@ import Base from './components/Base'
 
 
 const root = document.getElementById('root')
-
 const render = ReactDOM.createRoot(root)
+
+console.log('fff', <div ref="f" key={10}></div>)
 
 // Concurrent mode
 render.render(<Base />);
