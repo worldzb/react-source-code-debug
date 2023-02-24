@@ -10,7 +10,7 @@ const root = document.getElementById('root')
 const render = ReactDOM.createRoot(root)
 
 console.log('fff', <div ref="f" key={10}></div>)
-
+console.log(render)
 // Concurrent mode
 render.render(<Base />);
 
