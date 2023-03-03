@@ -739,6 +739,7 @@ function ChildReconciler(shouldTrackSideEffects) {
     newChildren: Array<*>,
     lanes: Lanes,
   ): Fiber | null {
+    // $$MARK 多节点 diff 算法
     // This algorithm can't optimize by searching from both ends since we
     // don't have backpointers on fibers. I'm trying to see how far we can get
     // with that model. If it ends up not being worth the tradeoffs, we can
@@ -766,7 +767,7 @@ function ChildReconciler(shouldTrackSideEffects) {
         knownKeys = warnOnInvalidKey(child, knownKeys, returnFiber);
       }
     }
-
+    // debugger
     let resultingFirstChild: Fiber | null = null;
     let previousNewFiber: Fiber | null = null;
 
